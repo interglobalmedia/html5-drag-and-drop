@@ -84,7 +84,7 @@ module.exports = env => {
             }),
             new InjectManifest({
                 swSrc: './src/sw.js',
-            })
+            }),
             new webpack.DefinePlugin({
                 'process.env.VERSION': JSON.stringify(env.VERSION),
                 'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
