@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
 /* Colors */
 /* Fonts */
@@ -8,19 +7,16 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background: #fee9d7;
-  font-family: "IBM Plex Mono", monospace;
-}
+  font-family: 'IBM Plex Mono', monospace; }
 
 .btn-div {
   margin: 20px auto;
   display: block;
-  text-align: center;
-}
+  text-align: center; }
 
 .btn-div button {
   width: 28px;
@@ -28,23 +24,19 @@ body {
   background: transparent;
   cursor: pointer;
   outline: none;
-  border: 0;
-}
+  border: 0; }
 
 i.fas.fa-plus-circle,
 i.fas.fa-minus-circle,
 i.fas.fa-plus-square {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); }
 
 i.fas.fa-plus-circle,
 i.fas.fa-minus-circle {
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 i.fas.fa-plus-square {
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 [draggable] {
   -moz-user-select: none;
@@ -53,27 +45,22 @@ i.fas.fa-plus-square {
   user-select: none;
   /* Required to make elements draggable in old WebKit */
   -khtml-user-drag: element;
-  -webkit-user-drag: element;
-}
+  -webkit-user-drag: element; }
 
 .drop-container {
   padding: 0.9375rem 0;
   margin: 0 auto 25px;
   display: block;
-  width: 90%;
-}
+  width: 90%; }
 
 .drop-grid {
   display: grid;
   width: 100%;
-  margin: 0 auto;
-}
-@media (min-width: 800px) {
-  .drop-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+  margin: 0 auto; }
+  @media (min-width: 800px) {
+    .drop-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
 
 .drop-cell {
   clear: both;
@@ -86,42 +73,32 @@ i.fas.fa-plus-square {
   -ms-box-shadow: inset 0 0 3px #000;
   box-shadow: inset 0 0 3px #000;
   text-align: center;
-  cursor: move;
-}
+  cursor: move; }
 
 .drop-cell header,
-.drop-cell .drag-footer {
+.drop-cell footer {
   color: #fff;
   text-shadow: #000 0 1px;
   box-shadow: 5px;
   padding: 8px;
-  background: -moz-linear-gradient(left center, black, #4f4f4f, #151515);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, black), color-stop(0.5, #4f4f4f), color-stop(1, #151515));
-  background: -webkit-linear-gradient(left center, black, #4f4f4f, #151515);
-  background: -ms-linear-gradient(left center, black, #4f4f4f, #151515);
-  border-bottom: 1px solid #ddd;
-}
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); }
 
 .drop-cell p {
-  padding: 8px;
-}
+  padding: 8px; }
 
 .content {
   width: 98.75%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .drop-cell.over {
   border: 2px dashed #000;
-  background: red;
-}
+  background: red; }
 
-button[name=para] {
+button[name="para"] {
   width: 99%;
   cursor: pointer;
   padding: 5px;
-  background: transparent;
-}
+  background: transparent; }
 
 .add-para {
   width: 100%;
@@ -131,8 +108,7 @@ button[name=para] {
   outline: none;
   border: 0;
   padding-top: 6px;
-  padding-bottom: 6px;
-}
+  padding-bottom: 6px; }
 
 .site-footer {
   width: 100%;
@@ -145,8 +121,7 @@ button[name=para] {
   margin-bottom: -15px;
   font-size: small;
   width: 100%;
-  box-shadow: 4px 6px 6px 6px black;
-}
+  box-shadow: 4px 6px 6px 6px black; }
 
 li.identity {
   text-align: center;
@@ -154,43 +129,35 @@ li.identity {
   width: 100%;
   margin: 110px auto 0;
   color: white;
-  font-size: 16px;
-}
-@media (min-width: 480px) {
-  li.identity {
-    font-size: 20px;
-  }
-}
+  font-size: 16px; }
+  @media (min-width: 480px) {
+    li.identity {
+      font-size: 20px; } }
 
 footer.materical-icons {
-  font-size: 20px;
-}
-@media (min-width: 480px) {
-  footer.materical-icons {
-    font-size: 30px;
-  }
-}
+  font-size: 20px; }
+  @media (min-width: 480px) {
+    footer.materical-icons {
+      font-size: 30px; } }
 
 :root {
   --space: 1.5em 0;
-  --space: 2em 0;
-}
+  --space: 2em 0; }
 
 .Site {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
 
 .Site-content {
   flex: 1 0 auto;
-  padding: var(--space) var(--space) 0;
-}
+  padding: var(--space) var(--space) 0; }
 
 .Site-content:after {
-  content: " ";
+  content: '\00a0';
   display: block;
   margin-top: var(--space);
   height: 0;
-  visibility: hidden;
-}
+  visibility: hidden; }
+
+/*# sourceMappingURL=styles.css.map */
