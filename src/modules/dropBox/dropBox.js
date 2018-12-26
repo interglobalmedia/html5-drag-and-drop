@@ -35,20 +35,6 @@ export function dropBox() {
     for (let i = 0; i < paraList.length; i++) {
         paraList[i].innerHTML = `Content ${i + 1}`;
     }
-    const addParaBtn = document.createElement('button');
-    addParaBtn.setAttribute('id', total);
-    addParaBtn.setAttribute('name', 'para');
-    addParaBtn.setAttribute('draggable', 'true');
-    addParaBtn.setAttribute('class', 'add-para');
-    addParaBtn.getAttribute('class', 'add-para');
-    addParaBtn.getAttribute('draggable', 'true');
-    addParaBtn.getAttribute('id', total);
-    addParaBtn.getAttribute('name', 'para');
-    dragDropBox.appendChild(addParaBtn);
-    const btnList = document.querySelectorAll('.add-para');
-    for (let i = 0; i < btnList.length; i++) {
-        btnList[i].innerHTML = `<i class="fas fa-plus-square"></i>`;
-    }
     const dragDropFooter = document.createElement('footer');
     dragDropFooter.setAttribute('id', total);
     dragDropFooter.setAttribute('class', 'drag-footer');

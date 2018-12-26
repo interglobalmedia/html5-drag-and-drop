@@ -220,22 +220,6 @@ function dropBox() {
     paraList[_i].innerHTML = "Content ".concat(_i + 1);
   }
 
-  var addParaBtn = document.createElement('button');
-  addParaBtn.setAttribute('id', total);
-  addParaBtn.setAttribute('name', 'para');
-  addParaBtn.setAttribute('draggable', 'true');
-  addParaBtn.setAttribute('class', 'add-para');
-  addParaBtn.getAttribute('class', 'add-para');
-  addParaBtn.getAttribute('draggable', 'true');
-  addParaBtn.getAttribute('id', total);
-  addParaBtn.getAttribute('name', 'para');
-  dragDropBox.appendChild(addParaBtn);
-  var btnList = document.querySelectorAll('.add-para');
-
-  for (var _i2 = 0; _i2 < btnList.length; _i2++) {
-    btnList[_i2].innerHTML = "<i class=\"fas fa-plus-square\"></i>";
-  }
-
   var dragDropFooter = document.createElement('footer');
   dragDropFooter.setAttribute('id', total);
   dragDropFooter.setAttribute('class', 'drag-footer');
@@ -247,8 +231,8 @@ function dropBox() {
   dragDropBox.appendChild(dragDropFooter);
   var footerList = document.querySelectorAll('.drop-cell footer');
 
-  for (var _i3 = 0; _i3 < footerList.length; _i3++) {
-    footerList[_i3].innerHTML = "Footer ".concat(_i3 + 1);
+  for (var _i2 = 0; _i2 < footerList.length; _i2++) {
+    footerList[_i2].innerHTML = "Footer ".concat(_i2 + 1);
   }
 }
 },{}],"modules/utils/helpers.js":[function(require,module,exports) {
@@ -385,7 +369,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55538" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57232" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
