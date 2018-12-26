@@ -313,7 +313,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/styles.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -327,7 +327,7 @@ var _dropBox = require("./modules/dropBox/dropBox");
 
 var _helpers = require("./modules/utils/helpers");
 
-require("./styles/styles.scss");
+require("./styles.scss");
 
 /* all event listeners related to drag and drop. have to be on the document because the dragDropBoxes are being creted dynamically and therefore don't initially exist in the DOM */
 document.addEventListener('dragstart', _dragDrop.handleDragStart, false);
@@ -342,7 +342,7 @@ addBox.addEventListener('click', _dropBox.dropBox, false); // reset button to cl
 
 var submitBtn = document.querySelector('.reset');
 submitBtn.addEventListener('click', _helpers.reset, false);
-},{"./modules/dragDrop/dragDrop":"modules/dragDrop/dragDrop.js","./modules/dropBox/dropBox":"modules/dropBox/dropBox.js","./modules/utils/helpers":"modules/utils/helpers.js","./styles/styles.scss":"styles/styles.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./modules/dragDrop/dragDrop":"modules/dragDrop/dragDrop.js","./modules/dropBox/dropBox":"modules/dropBox/dropBox.js","./modules/utils/helpers":"modules/utils/helpers.js","./styles.scss":"styles.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -369,7 +369,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57232" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60861" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
