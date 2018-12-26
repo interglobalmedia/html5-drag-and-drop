@@ -6,6 +6,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const {
+    InjectManifest
+} = require('workbox-webpack-plugin');
 
 module.exports = env => {
     const {
@@ -79,6 +82,9 @@ module.exports = env => {
             new WorkboxPlugin.GenerateSW({
                 swDest: 'sw.js'
             }),
+            new InjectManifest({
+                swSrc: './src/sw.js',
+            })
             new webpack.DefinePlugin({
                 'process.env.VERSION': JSON.stringify(env.VERSION),
                 'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
