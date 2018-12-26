@@ -11,7 +11,8 @@
         "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
         "clean": "rimraf dist .cache",
         "start": "npm run clean && npx parcel src/index.html",
-        "dev": "npx parcel index.html"
+        "dev": "npx parcel index.html",
+        "deploy": "gh-pages -d dist"
     },
     "author": "Maria D. Campbell",
     "license": "ISC",
@@ -32,6 +33,7 @@
         "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-prettier": "^3.0.0",
         "expect": "^23.6.0",
+        "gh-pages": "^2.0.1",
         "husky": "^1.2.1",
         "lint-staged": "^8.1.0",
         "mocha": "^5.2.0",

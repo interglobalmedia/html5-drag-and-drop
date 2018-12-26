@@ -15,7 +15,7 @@ import {
     reset
 } from './modules/utils/helpers';
 
-import './styles/styles.scss'
+import './styles.scss'
 /* all event listeners related to drag and drop. have to be on the document because the dragDropBoxes are being creted dynamically and therefore don't initially exist in the DOM */
 document.addEventListener('dragstart', handleDragStart, false);
 document.addEventListener('dragenter', handleDragEnter, false);

@@ -1,8 +1,8 @@
 {
   "index.html": "/index.html",
   "favicon.ico": "/favicon.26242483.ico",
-  "styles/styles.css": "/styles.956d002c.css",
-  "../node_modules/parcel-bundler/src/builtins/css-loader.js": "/styles.956d002c.map",
+  "styles.css": "/styles.8986bff4.css",
+  "../node_modules/parcel-bundler/src/builtins/css-loader.js": "/styles.8986bff4.map",
   "index.js": "/src.e31bb0bc.js",
-  "styles/styles.scss": "/src.e31bb0bc.css"
+  "styles.scss": "/src.e31bb0bc.css"
 }
