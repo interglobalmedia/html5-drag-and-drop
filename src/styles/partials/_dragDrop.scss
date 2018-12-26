@@ -10,15 +10,19 @@
 
 .drop-container {
     padding: 0.9375rem 0;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     display: block;
     width: 90%;
 }
 
 .drop-grid {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    @media #{$min-800} {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .drop-cell {
