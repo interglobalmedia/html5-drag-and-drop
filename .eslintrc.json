@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import",
+        "prettier"
+    ],
+    "rules": {
+        "max-len": ["off", {
+            "code": 80
+        }],
+        "no-unused-vars": 0,
+        "no-console": 0,
+        "indent": [
+            0
+        ],
+        "linebreak-style": [
+            "off",
+            "eol-last"
+        ],
+        "quotes": [
+            0
+        ],
+        "semi": [
+            0
+        ]
+    }
+}
